@@ -1,0 +1,335 @@
+/* ==========================================================================
+   InviteCraft - Simple & Beginner-Friendly Website Styles
+   ========================================================================== */
+
+/* 1. TOP BAR & NAVBAR */
+.top-announcement {
+  background-color: #6f42c1;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.brand-purple {
+  color: #6f42c1;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #495057 !important;
+  margin: 0 4px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #6f42c1 !important;
+  background-color: #f3e8ff;
+}
+
+.nav-link.active {
+  color: #ffffff !important;
+  background-color: #6f42c1;
+}
+
+/* 2. REUSABLE SIMPLE CARDS & HOVER EFFECTS */
+.simple-card {
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.simple-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-box {
+  height: 220px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #f1f3f5;
+}
+
+.card-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.simple-card:hover .card-img-box img {
+  transform: scale(1.05);
+}
+
+/* 3. SIMPLE CAROUSEL COMPONENT */
+.simple-carousel {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 16px;
+}
+
+.carousel-img-container {
+  height: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ced4da;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #6f42c1;
+  width: 24px;
+  border-radius: 10px;
+}
+
+/* 4. PAGE COLOR PALETTES (As Specified in Requirements) */
+
+/* Page 1: Home (Cream + Purple) */
+.page-home {
+  background-color: #fdfbf7;
+}
+
+.hero-home {
+  background-color: #fbf5ee;
+  border-bottom: 2px solid #ede4d6;
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #59339d;
+  color: #ffffff;
+}
+
+.btn-outline-purple {
+  border: 2px solid #6f42c1;
+  color: #6f42c1;
+  font-weight: 600;
+}
+
+.btn-outline-purple:hover {
+  background-color: #6f42c1;
+  color: #ffffff;
+}
+
+.section-cream {
+  background-color: #fdfaf3;
+}
+
+.section-purple-light {
+  background-color: #f3e8ff;
+}
+
+/* Page 2: Wedding (Rose Pink + Gold) */
+.page-wedding {
+  background-color: #fff5f7;
+}
+
+.hero-wedding {
+  background-color: #ffebee;
+  border-bottom: 2px solid #ffcdd2;
+}
+
+.btn-wedding {
+  background-color: #d81b60;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-wedding:hover {
+  background-color: #ad1457;
+  color: #ffffff;
+}
+
+.badge-gold {
+  background-color: #ffc107;
+  color: #212529;
+  font-weight: 600;
+}
+
+.filter-btn-wedding.active {
+  background-color: #d81b60 !important;
+  color: #ffffff !important;
+  border-color: #d81b60 !important;
+}
+
+/* Page 3: Birthday (Orange + Blue) */
+.page-birthday {
+  background-color: #f8fbff;
+}
+
+.hero-birthday {
+  background-color: #fff3e0;
+  border-bottom: 2px solid #ffe0b2;
+}
+
+.btn-birthday {
+  background-color: #ff9800;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-birthday:hover {
+  background-color: #f57c00;
+  color: #ffffff;
+}
+
+.filter-btn-birthday.active {
+  background-color: #ff9800 !important;
+  color: #ffffff !important;
+  border-color: #ff9800 !important;
+}
+
+/* Page 4: Other Events (Green + Yellow) */
+.page-events {
+  background-color: #fbfdf9;
+}
+
+.hero-events {
+  background-color: #e8f5e9;
+  border-bottom: 2px solid #c8e6c9;
+}
+
+.filter-btn-events.active {
+  background-color: #2e7d32 !important;
+  color: #ffffff !important;
+  border-color: #2e7d32 !important;
+}
+
+/* Page 5: Customization (Lavender + White) */
+.page-customize {
+  background-color: #f8f4fb;
+}
+
+.hero-customize {
+  background-color: #f3e5f5;
+  border-bottom: 2px solid #e1bee7;
+}
+
+/* Live Card Preview Box */
+.live-preview-box {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 16px;
+}
+
+.invitation-card-render {
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-card-names {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+/* Page 6: Contact & Order (Dark Blue + Light Blue) */
+.page-contact {
+  background-color: #f0f7fc;
+}
+
+.hero-contact {
+  background-color: #0d3b66;
+  color: #ffffff;
+}
+
+.contact-info-card {
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 12px;
+}
+
+.social-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.social-icon-btn.instagram {
+  background-color: #e1306c;
+}
+
+.social-icon-btn.facebook {
+  background-color: #1877f2;
+}
+
+.social-icon-btn.whatsapp {
+  background-color: #25d366;
+}
+
+/* 5. FOOTER & MODALS */
+.simple-footer {
+  background-color: #212529;
+  color: #adb5bd;
+}
+
+.simple-footer a {
+  color: #adb5bd;
+}
+
+.simple-footer a:hover {
+  color: #ffffff;
+}
+
+.simple-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.simple-modal-content {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 90%;
+  max-width: 550px;
+}
