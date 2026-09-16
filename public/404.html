@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>KrishaCards</title>
+    <script>
+      // Single Page Apps redirect for GitHub Pages
+      // Redirects direct routes like /invitation/wedding to /invitation/#/wedding
+      var path = window.location.pathname;
+      var repo = '/invitation';
+      if (path.indexOf(repo) === 0) {
+        var route = path.slice(repo.length);
+        if (route && route !== '/' && route.indexOf('/#') !== 0) {
+          window.location.replace(repo + '/#' + (route.startsWith('/') ? route : '/' + route) + window.location.search);
+        } else {
+          window.location.replace(repo + '/');
+        }
+      } else {
+        window.location.replace('/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Loading KrishaCards...</p>
+  </body>
+</html>
